@@ -1,0 +1,16 @@
+@use "../utills/variables" as *;
+@use "../utills/mixins" as *;
+
+.header {
+  &__container {
+    @include Flex($justify: space-between, $items: center);
+
+    &--left-nav {
+      &__list {
+        @include Flex($items: center, $gap: 20px);
+        &--item {
+        }
+      }
+    }
+  }
+}
